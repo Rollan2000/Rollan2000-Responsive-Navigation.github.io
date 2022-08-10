@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Navigation</title>
+    <Meta charset="UTF-8">
+    <Meta name="description" content="create three responsive navigations using flexbox for your portfolio site.">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+    <div class="wrapper" id="main-slide">
+
+ 
+    <div class="hero-section">
+
+        <img src="images/Logo.png" height="200"  width="30%"  alt="Eggcellent logo">
+
+        <div class="header-box">
+            <h1>title name</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Minus totam repellat a consequuntur debitis vel eligendi 
+                perferendis assumenda cupiditate eius praesentium nam nisi o mnis accusamus, pariatur perspiciatis! Consequatur, harum itaque!
+            </p>
+        
+        </div>   
+     </div>
+ 
+
+        <div class="navbar">
+
+            <span class="open-slide">
+
+                <a href="#" onclick="openSideMenu()">
+
+                    <svg width="30" height="30">
+                        <path d="M0, 5 30, 5" stroke="#000" stroke-width="5"/>
+                        <path d="M0, 14 30, 14" stroke="#000" stroke-width="5"/>
+                        <path d="M0, 23 30, 23" stroke="#000" stroke-width="5"/>
+
+                    </svg>
+            </a>
+            </span>
+
+                <li>    <a href="#">Home</a>        </li>
+                <li>    <a href="#">Menu</a>        </li>
+                <li>    <a href="#">About Us</a>    </li>
+              
+    </div>
+
+    <div id="side-menu" class="side-nav">
+        
+        <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+        <li>    <a href="#">Home</a>        </li>
+        <li>    <a href="#">Menu</a>        </li>
+        <li>    <a href="#">About Us</a>    </li>
+   </div>
+
+
+    <div class="flex-box">
+
+        <h1>Welcome</h1>
+
+    <div class="flex-box2">
+
+    <div>
+        <h2>product 1</h2>
+        <h2>Lorem ipsum dolor?</h2>
+        <p>Praesent aliquam,  justo convallis luctus rutrum, erat nulla fermentum diam, at nonummy quam  ante ac quam. Quisque ornare risus quis  ligula. Phasellus tristique purus a augue condimentum adipiscing. Aenean  sagittis. Etiam leo pede, rhoncus venenatis, tristique in, vulputate at,  odio. Donec et ipsum et sapien vehicula nonummy.
+        Suspendisse potenti. Fusce  varius urna id quam.</p>
+
+    </div>
+
+    <div>
+        <h2>product 2</h2>
+        <h2>Lorem ipsum dolor?</h2>
+        <p>Praesent aliquam,  justo convallis luctus rutrum, erat nulla fermentum diam, at nonummy quam  ante ac quam. Quisque ornare risus quis  ligula. Phasellus tristique purus a augue condimentum adipiscing. Aenean  sagittis. Etiam leo pede, rhoncus venenatis, tristique in, vulputate at,  odio. Donec et ipsum et sapien vehicula nonummy.
+        Suspendisse potenti. Fusce  varius urna id quam.</p>
+
+   </div>
+
+   <div>
+        <h2>product 3 </h2>
+        <h2>Lorem ipsum dolor?</h2>
+        <p>Praesent aliquam,  justo convallis luctus rutrum, erat nulla fermentum diam, at nonummy quam  ante ac quam. Quisque ornare risus quis  ligula. Phasellus tristique purus a augue condimentum adipiscing. Aenean  sagittis. Etiam leo pede, rhoncus venenatis, tristique in, vulputate at,  odio. Donec et ipsum et sapien vehicula nonummy.
+        Suspendisse potenti. Fusce  varius urna id quam.</p>
+
+   </div>
+
+   <div class="footer">
+    
+        <h4>Lorem ipsum, dolor sit amet </h4>
+
+    </div>
+
+</div>
+<script>
+
+    //Open the side menu
+
+    function openSideMenu(){
+            //slides the hidden side menu over --> 450px
+            document.getElementById('side-menu').style.width = '450px';
+
+            //slides the main content over --> 400px
+            document.getElementById('main-slide').style.marginLeft = '400px';
+        }
+
+
+        //closes the side menu
+         function closeSideMenu(){
+            //slides the side menu back <-- to 0 px
+            document.getElementById('side-menu').style.width = '0px';
+
+            //slides the main content back <-- to 0 px
+            document.getElementById('main-slide').style.marginLeft = '20px auto';
+
+         }
+</script>
+
+
+
+</body>
+
+
+
+
+
+</html>

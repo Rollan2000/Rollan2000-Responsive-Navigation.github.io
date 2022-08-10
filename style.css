@@ -1,0 +1,185 @@
+/*  CSS Document */
+
+html {
+    font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+body {
+    margin:0;
+}
+
+
+.wrapper {
+
+    margin:20px auto;
+    width:88vh;
+    border: 4px solid black;
+    transition: .3s all ease-in-out;
+    -webkit-transition: .3 ease-in-out;
+    -moz-transition: .3 ease-in-out;
+}
+
+.hero-section
+{
+    height: 50vh;
+    background-color: #F2EFE3;
+  
+  
+}
+
+.hero-section img
+{
+
+position: relative;
+bottom: -20px;
+margin:0;
+
+}
+
+.header-box 
+{
+    width:95%;
+    color: #707070;
+    position: relative;
+    bottom: 40px;
+    left: 10px;
+    margin:auto;
+    
+ 
+    
+}
+
+.header-box h1
+{
+    margin-top:0;
+    text-align: center;
+ 
+}
+
+/* Navigation --------------------------------------------*/
+.navbar 
+{
+    margin:0;
+    padding: 0px;
+ 
+    background-color:#F2EFE3;
+  
+}
+
+.navbar  li 
+
+{
+display: inline-block;
+
+margin:29px 15px;
+
+
+}
+
+.navbar  a
+{
+font-size:25px;
+padding-bottom:29px ;
+text-decoration: none;
+color:#707070;
+transition: .3s all ease-in;
+
+}
+
+.navbar  li a:hover
+{
+color:orange;
+}
+
+
+/* side menu---------------------------------------------*/
+
+#side-menu
+{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:100;
+    height:200%;
+    background-color:#F2EFE3;
+   
+    transition: .3s all ease-in-out;
+   
+}
+
+
+
+#side-menu li{
+    display:block;
+    margin:20px;
+    
+
+}
+
+
+
+#side-menu  a{
+    font-size: 25px;
+    margin:20px;
+    padding-left:30%;
+    color:#707070;
+}
+
+
+
+.flex-box
+{
+  padding:15px;  
+  display: flex;
+  flex-direction: column;
+  width:90%;
+
+
+}
+@media screen and (max-width:800px) 
+{
+    .wrapper{
+        margin:0;
+        width:100v;
+    }
+
+    .nav li {
+        display: none;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width: 760px)
+{
+
+
+ .hero-section  
+ {
+   height:50vh;
+ }
+
+ .header-box
+ {
+    width:100%;
+    left: 0;
+    top:150;
+    margin:auto;
+    border-left: 0;
+    border-right: 0;
+ }
+
+ .flexbox,  .flex-box2
+ {
+    flex-direction:column;
+ }
+
+
+}
+
